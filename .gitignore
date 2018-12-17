@@ -1,0 +1,7 @@
+/node_modules
+/server/config/keys_dev.js
+/server/config/keys_prod.js
+/server/config/keys.js
+/.next
+now.json
+package-lock.json
