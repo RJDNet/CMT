@@ -177,6 +177,11 @@ nextApp.prepare()
       return handle(req, res);
     });
 
+    const corsOptions = {
+      origin: 'https://artracreative.herokuapp.com/',
+      credentials: true // <-- REQUIRED backend setting
+    };
+
     // GraphQl Route
-    app.get('/graphql', cors(), async () => { });
+    app.get('/graphql', cors(corsOptions), async () => { });
   });
