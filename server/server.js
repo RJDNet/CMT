@@ -108,6 +108,8 @@ nextApp.prepare()
       context: async ({ req }) => ({
         authScope: await getScope(req.headers.authorization)
       }),
+      introspection: true,
+      playground: true,
       // playground: process.env.NODE_ENV === 'production' ? false : GRAPHQL_PLAYGROUND_CONFIG
     });
 
