@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon server/server.js",
     "build": "next build && npm run start",
-    "start": "NODE_ENV=production nodemon server/server.js"
+    "start": "NODE_ENV=production nodemon server/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
