@@ -16,4 +16,4 @@ Used in conjunction with the Artra project.
 
 ## Link to project
 
-https://webdash-mwklbocewo.now.sh/
+https://cmtwebdash.herokuapp.com/
