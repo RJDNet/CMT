@@ -31,6 +31,7 @@ const rateLimit = require("express-rate-limit");
 // Global Variables
 //const { secretOrKey1, secretOrKey2, mongoURI } = require('./config/keys');
 const { mongoURI, secretOrKey1, secretOrKey2 } = process.env;
+const PORT = process.env.PORT || 5000;
 
 // GraphQl / Apollo Imports
 const { typeDefs, resolvers } = require('./schema/schema');
@@ -114,8 +115,8 @@ nextApp.prepare()
     server.applyMiddleware({ app });
 
     // Server listen
-    app.listen({ port: 4000 }, () => {
-      console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+    app.listen({ port: PORT }, () => {
+      console.log(`🚀 Server ready at http://localhost:5000${server.graphqlPath}`)
     });
 
 
