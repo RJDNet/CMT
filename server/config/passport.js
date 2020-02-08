@@ -21,8 +21,8 @@ passport.deserializeUser((id, done) => {
 });
 
 // Global Variables
-// const { googleClientID, googleClientSecret } = require('./keys');
-const { googleClientID, googleClientSecret } = process.env;
+const { googleClientID, googleClientSecret } = require('./keys');
+//const { googleClientID, googleClientSecret } = process.env;
 
 // Passport Strategies 
 module.exports = passport => {
@@ -53,9 +53,9 @@ module.exports = passport => {
 
   passport.use(
     new GoogleStrategy({
-      callbackURL: '/auth/google/redirect',
       clientID: googleClientID,
-      clientSecret: googleClientSecret
+      clientSecret: googleClientSecret,
+      callbackURL: '/auth/google/redirect'
     }, (accessToken, refreshToken, profile, done) => {
       User.findOne({ googleProfileID: profile.id })
         .then(currentUser => {
@@ -73,4 +73,5 @@ module.exports = passport => {
         });
     })
   );
+
 };
