@@ -29,8 +29,8 @@ const cookieSession = require('cookie-session');
 const rateLimit = require("express-rate-limit");
 
 // Global Variables
-const { secretOrKey1, secretOrKey2, mongoURI } = require('./config/keys');
-//const { mongoURI, secretOrKey1, secretOrKey2 } = process.env;
+//const { secretOrKey1, secretOrKey2, mongoURI } = require('./config/keys');
+const { mongoURI, secretOrKey1, secretOrKey2 } = process.env;
 
 // GraphQl / Apollo Imports
 const { typeDefs, resolvers } = require('./schema/schema');

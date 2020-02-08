@@ -1,0 +1,12 @@
+{
+  "env": {
+    "mongoURI": "@webdash-mongouri",
+    "secretOrKey1": "@webdash-secretorkey1",
+    "secretOrKey2": "@webdash-secretorkey2",
+    "googleClientID": "@webdash-googleclientid",
+    "googleClientSecret": "@webdash-googleclientsecret",
+    "cloudinaryCloudName": "@webdash-cloudinarycloudname",
+    "cloudinaryApiKey": "@webdash-cloudinaryapikey",
+    "cloudinaryApiSecret": "@webdash-cloudinaryapisecret"
+  }
+}

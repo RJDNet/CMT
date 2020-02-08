@@ -21,8 +21,8 @@ passport.deserializeUser((id, done) => {
 });
 
 // Global Variables
-const { googleClientID, googleClientSecret } = require('./keys');
-//const { googleClientID, googleClientSecret } = process.env;
+//const { googleClientID, googleClientSecret } = require('./keys');
+const { googleClientID, googleClientSecret } = process.env;
 
 // Passport Strategies 
 module.exports = passport => {
