@@ -27,7 +27,7 @@
     "lodash": "4.17.15",
     "moment": "2.22.2",
     "mongoose": "5.8.11",
-    "next": "9.2.1",
+    "next": "9.3.3",
     "next-redux-wrapper": "4.0.1",
     "nodemon": "1.18.9",
     "passport": "0.4.0",
